@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do list</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="to-do-base">
+    <h1>Board de tarefas</h1>
+    <form class="form" id="taskForm">
+      <input type="text" id="name" placeholder="Nome da tarefa" required/>
+       <select id="etiqueta" aria-label="Etiqueta">
+       <option value="" disabled selected>Etiqueta</option>
+      <option value="front-end">front-end</option>
+      <option value="back-end">back-end</option>
+      <option value="back-end">ux</option>
+
+  </select>
+      <button type="submit" class="add-task">+</button>
+    </form>
+
+    <section class="todo-list-section">
+      <ul id="todo-list"></ul>
+    </section>
+    <div class="footer" id="footerCount">0 tarefas concluídas</div>
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>
